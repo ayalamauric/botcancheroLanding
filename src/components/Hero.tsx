@@ -20,7 +20,7 @@ export default function Hero() {
           </div>
           <div className="relative">
             <img
-               src={`${import.meta.env.BASE_URL}img/Hero.png`}
+               src="/img/Hero.png"
               alt="Chat Interface"
               className="relative mx-auto w-[300px] h-[600px] object-cover"
             />
