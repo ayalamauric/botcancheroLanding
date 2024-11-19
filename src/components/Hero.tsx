@@ -1,5 +1,7 @@
 import React from 'react';
 import { MessageCircle, Facebook, Instagram, Send } from 'lucide-react';
+import HeroImage from '/img/Hero.png';
+
 
 export default function Hero() {
   return (
@@ -20,7 +22,7 @@ export default function Hero() {
           </div>
           <div className="relative">
             <img
-               src="/img/Hero.png"
+               src={HeroImage}
               alt="Chat Interface"
               className="relative mx-auto w-[300px] h-[600px] object-cover"
             />
