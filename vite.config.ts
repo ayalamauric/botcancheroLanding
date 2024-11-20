@@ -7,5 +7,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
-  base: './', // Asegura que las rutas relativas funcionen en producción
+  base: './', // Rutas relativas para producción
 });
