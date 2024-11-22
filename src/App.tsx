@@ -1,21 +1,31 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Integrations from './components/Integrations';
 import Footer from './components/Footer';
+import Terms from './Pages/Terms';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Navbar />
-      <main>
-        <Hero />
-        <Features />
-        <Integrations />
-        <Footer />
-      </main>
-    </div>
+
+      <div className="min-h-screen bg-white">
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Navbar />
+              <main>
+                <Hero />
+                <Features />
+                <Integrations />
+                <Footer />
+              </main>
+            </>
+          } />
+          <Route path="/terms" element={<Terms />} />
+        </Routes>
+      </div>
   );
 }
 
