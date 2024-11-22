@@ -1,11 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Integrations from './components/Integrations';
 import Footer from './components/Footer';
 import Terms from './Pages/Terms';
+import Privacy from './Pages/Privacy';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             </>
           } />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/privacy" element={<Privacy />} />
         </Routes>
       </div>
   );

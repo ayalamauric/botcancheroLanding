@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Twitter, Mail, Globe } from 'lucide-react';
+import { Mail, Instagram, Facebook } from 'lucide-react';
 import { Link } from 'react-router-dom'; // Importar Link
 
 export default function Footer() {
@@ -9,25 +9,24 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center">
-              <img
-                src="https://res.cloudinary.com/ddekstazc/image/upload/v1732246180/logolargo_ilnyav.png"
-                alt="Logo"
-                className="h-6"
-              />
+              <a href="/">
+                <img
+                  src="https://res.cloudinary.com/ddekstazc/image/upload/v1732246180/logolargo_ilnyav.png"
+                  alt="Logo"
+                  className="h-6"
+                />
+              </a>
             </div>
             <p className="text-sm">Conecta amigos, conecta el deporte</p>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-white transition-colors">
-                <Twitter size={20} />
+                <Instagram size={20} />
               </a>
               <a href="#" className="hover:text-white transition-colors">
-                <Github size={20} />
+                <Facebook size={20} />
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="mailto:hola@botcanchero.com" className="hover:text-white transition-colors">
                 <Mail size={20} />
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
-                <Globe size={20} />
               </a>
             </div>
           </div>
@@ -62,30 +61,24 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Legal</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">Seguridad y Datos</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/terms" className="hover:text-white transition-colors">
-                  Terms & Conditions
+                  Términos & Condiciones
                 </Link>
               </li>
               <li>
                 <Link to="/privacy" className="hover:text-white transition-colors">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link to="/cookies" className="hover:text-white transition-colors">
-                  Cookie Policy
+                  Políticas de Privacidad
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Contacto</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">Ubicación</h3>
             <ul className="space-y-2 text-sm">
-              <li>Email: hola@botcanchero.com</li>
               <li>Dirección: Juan Domingo Perón 702</li>
               <li>Ciudad: Resistencia, Chaco 🇦🇷</li>
             </ul>
@@ -94,7 +87,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
           <p>
-            &copy; {new Date().getFullYear()} Botcanchero. All rights reserved. | creado con ❤️
+            &copy; {new Date().getFullYear()} Botcanchero. Todos los derechos reservados. | creado con ❤️
             en Resistencia
           </p>
         </div>
