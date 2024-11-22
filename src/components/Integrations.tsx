@@ -6,11 +6,11 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 const platforms = [
-  { name: 'Instagram', icon: FaInstagram, color: 'text-pink-600' },
-  { name: 'Facebook', icon: Facebook, color: 'text-blue-600' },
-  { name: 'Tiktok', icon: FaTiktok, color: 'text-black' }, // Actualizado a FaTiktok
-  { name: 'Telegram', icon: FaTelegramPlane, color: 'text-blue-400' },
-  { name: 'X', icon:  FaXTwitter, color: 'text-black-400' },
+  { name: 'Instagram', icon: FaInstagram, color: 'text-pink-600', link: 'https://www.instagram.com/botcanchero' },
+  { name: 'Telegram', icon: FaTelegramPlane, color: 'text-blue-400', link: 'https://t.me/+541133232222' },
+  { name: 'Tiktok', icon: FaTiktok, color: 'text-black', link: 'https://www.tiktok.com/botcanchero' },
+  { name: 'X', icon: FaXTwitter, color: 'text-black-400', link: 'https://twitter.com/botcanchero' },
+  { name: 'Facebook', icon: Facebook, color: 'text-blue-600', link: 'https://www.facebook.com/botcanchero' },
 ];
 
 export default function Integrations() {
@@ -19,7 +19,7 @@ export default function Integrations() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Nuestras redes sociales
+            Encontranos en
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Botcanchero creado con ❤️ en Resistencia, Chaco al Mundo.
@@ -29,12 +29,18 @@ export default function Integrations() {
           {platforms.map((platform, index) => {
             const Icon = platform.icon;
             return (
-              <div key={index} className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+              <a 
+                key={index} 
+                href={platform.link} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+              >
                 <div className="flex flex-col items-center">
                   <Icon className={`w-16 h-16 ${platform.color} mb-4`} />
                   <h3 className="text-lg font-semibold text-gray-900">{platform.name}</h3>
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>

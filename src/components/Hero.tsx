@@ -20,7 +20,7 @@ export default function Hero() {
           </div>
           <div className="relative">
             <img
-               src="https://res.cloudinary.com/ddekstazc/image/upload/v1731978657/Hero_utxboj.png"
+               src="https://res.cloudinary.com/ddekstazc/image/upload/v1732241853/Hero_utxboj.png"
               alt="Chat Interface"
               className="relative mx-auto w-[300px] h-[600px] object-cover"
             />
