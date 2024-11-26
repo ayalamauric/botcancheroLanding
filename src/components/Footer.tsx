@@ -1,19 +1,19 @@
 import React from 'react';
 import { Mail, Instagram, Facebook } from 'lucide-react';
-import { Link } from 'react-router-dom'; // Importar Link
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center">
               <a href="/">
                 <img
                   src="https://res.cloudinary.com/ddekstazc/image/upload/v1732246180/logolargo_ilnyav.png"
                   alt="Logo"
-                  className="h-6"
+                  className="h-6 md:h-8"
                 />
               </a>
             </div>
@@ -32,7 +32,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Accesos Rapidos</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">Accesos Rápidos</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="hover:text-white transition-colors">
@@ -87,7 +87,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-sm text-center">
           <p>
-            &copy; {new Date().getFullYear()} Botcanchero. Todos los derechos reservados. | creado con ❤️
+            &copy; {new Date().getFullYear()} Botcanchero. Todos los derechos reservados | creado con ❤️
             en Resistencia
           </p>
         </div>
